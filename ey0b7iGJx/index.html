@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://risin.work/favicon.ico?v=1621855375121">
+<link rel="shortcut icon" href="https://risin.work/favicon.ico?v=1621860747449">
 <link rel="stylesheet" href="https://risin.work/styles/main.css">
 
 
@@ -23,7 +23,7 @@
     <meta name="description" content="：D
 " />
     <meta name="keywords" content="" />
-
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   </head>
   <body>
     <div id="app" class="main">
@@ -32,7 +32,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://risin.work">
-        <img src="https://risin.work/images/avatar.png?v=1621855375121" class="site-logo">
+        <img src="https://risin.work/images/avatar.png?v=1621860747449" class="site-logo">
         <h1 class="site-title">朝阳的个人博客</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -111,6 +111,22 @@
             
 
             
+		
+		
+		
+		
+    <div id="vcomments" class="fade-in"></div>
+    
+    <script>
+        new Valine({
+	    el: '#vcomments',
+	    lang: 'zh-cn',
+	    appId: 'JrvrHduLbGWn1ukJYr8kLaws-9Nh9j0Va',	   	
+	    appKey: 'NUI5qzg0eq96OhV8Acg7kFua'
+        });
+    </script>
+
+
 
           </div>
 
@@ -137,27 +153,6 @@ var app = new Vue({
 
 
 
-    <div id="comment"></div>
-    <span id="comment-count"></span>
-    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-    <script>
-    comment_el = '#comment';
-    comment_count_el = 'span.comment-count';
-    new Valine({
-        el: comment_el,				// 评论区元素（要求div）
-        count_el: comment_count_el,    // 评论计数元素（要求span）
-        lang: 'zh-cn',							   // 语言（zh-cn或en）
-        emoticon_url: 'https://cloud.panjunwen.com/alu', // 表情包根目录（自行解决文件托管）
-        emoticon_list: ["吐.png", "狂汗.png", "不说话.png"], // 表情包文件列表
-        app_id: 'JrvrHduLbGWn1ukJYr8kLaws-9Nh9j0Va',			    										   	
-        app_key: 'NUI5qzg0eq96OhV8Acg7kFua',    										      
-        placeholder: 'Write a comment',  // 提示符
-        admin_email_hash: 'f32fc1c3f6674bfb5621a60901b5f96c', // 可选，管理员邮箱md5，用于显示管理员标志👮‍
-        max_nest: 3,					// 嵌套评论深度，太大会影响加载速度
-        page_size: 5					// 分页大小
-    });
-</script>
-
-
+    
   </body>
 </html>
