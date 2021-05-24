@@ -1,45 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
     <meta charset="utf-8" >
 
 <title>BlackJack | 朝阳的个人博客</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.0/css/all.min.css">
-<link rel="shortcut icon" href="https://risin.work/favicon.ico?v=1621837238540">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://risin.work/favicon.ico?v=1621855375121">
 <link rel="stylesheet" href="https://risin.work/styles/main.css">
 
 
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css">
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-
-  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css" />
-  
-
-  
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-197651554-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-197651554-1');
-</script>
+    <meta name="description" content="
+
+简介
 
 
-    <meta name="description" content="1
-" />
-    <meta name="keywords" content="" />
+简介
+..." />
+    <meta name="keywords" content="编程,Python" />
+
   </head>
   <body>
     <div id="app" class="main">
@@ -48,7 +37,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://risin.work">
-        <img src="https://risin.work/images/avatar.png?v=1621837238540" class="site-logo">
+        <img src="https://risin.work/images/avatar.png?v=1621855375121" class="site-logo">
         <h1 class="site-title">朝阳的个人博客</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -64,7 +53,7 @@
         
       
         
-          <a href="/bian-cheng" class="site-nav">
+          <a href="/programing" class="site-nav">
             编程
           </a>
         
@@ -102,8 +91,6 @@
       
         
       
-        
-      
     </div>
     <div class="site-description">
       纸上得来终觉浅，绝知此事要躬行。
@@ -121,10 +108,30 @@
             <h2 class="post-title">BlackJack</h2>
             <div class="post-date">2021-05-24</div>
             
+              <div class="feature-container" style="background-image: url('https://risin.work/post-images/s2yGCA70x.jpg')">
+              </div>
+	      
             <div class="post-content" v-pre>
-              <p>1</p>
+              <!-- more -->
+<p><ul class="markdownIt-TOC">
+<li><a href="#%E7%AE%80%E4%BB%8B">简介</a></li>
+</ul>
+</p>
+<h1 id="简介">简介</h1>
 
-            </div>
+	    </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://risin.work/programing/" class="tag">
+                    编程
+                  </a>
+                
+                  <a href="https://risin.work/python/" class="tag">
+                    Python
+                  </a>
+                
+              </div>
             
             
               <div class="next-post">
@@ -138,12 +145,6 @@
             
 
             
-              
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
-
-              
-            
 
           </div>
 
@@ -151,7 +152,7 @@
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script type="application/javascript">
 
 AOS.init();
@@ -166,36 +167,30 @@ var app = new Vue({
 </script>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad()
-  </script>
 
 
 
 
-  
-    <script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
+    <div id="comment"></div>
+    <span id="comment-count"></span>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <script>
-
-      var gitalk = new Gitalk({
-        clientID: '2389c99de90f04c8d8d9',
-        clientSecret: 'd24b25e0c8b7cd95db256c490ef62095e7e028a7',
-        repo: 'Blog',
-        owner: 'RS0010',
-        admin: ['RS0010'],
-        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
-
-      gitalk.render('gitalk-container')
-
-    </script>
-  
-
-  
-
-
+    comment_el = '#comment';
+    comment_count_el = 'span.comment-count';
+    new Valine({
+        el: comment_el,				// 评论区元素（要求div）
+        count_el: comment_count_el,    // 评论计数元素（要求span）
+        lang: 'zh-cn',							   // 语言（zh-cn或en）
+        emoticon_url: 'https://cloud.panjunwen.com/alu', // 表情包根目录（自行解决文件托管）
+        emoticon_list: ["吐.png", "狂汗.png", "不说话.png"], // 表情包文件列表
+        app_id: 'JrvrHduLbGWn1ukJYr8kLaws-9Nh9j0Va',			    										   	
+        app_key: 'NUI5qzg0eq96OhV8Acg7kFua',    										      
+        placeholder: 'Write a comment',  // 提示符
+        admin_email_hash: 'f32fc1c3f6674bfb5621a60901b5f96c', // 可选，管理员邮箱md5，用于显示管理员标志👮‍
+        max_nest: 3,					// 嵌套评论深度，太大会影响加载速度
+        page_size: 5					// 分页大小
+    });
+</script>
 
 
   </body>
