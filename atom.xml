@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://serverless-page-bucket-7mo7g1yj-1258176790.cos-website.ap-hongkong.myqcloud.com</id>
+    <id>https://blog.risin.work</id>
     <title>朝阳的个人博客</title>
-    <updated>2021-05-25T08:49:08.773Z</updated>
+    <updated>2021-05-25T09:59:44.193Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://serverless-page-bucket-7mo7g1yj-1258176790.cos-website.ap-hongkong.myqcloud.com"/>
-    <link rel="self" href="https://serverless-page-bucket-7mo7g1yj-1258176790.cos-website.ap-hongkong.myqcloud.com/atom.xml"/>
+    <link rel="alternate" href="https://blog.risin.work"/>
+    <link rel="self" href="https://blog.risin.work/atom.xml"/>
     <subtitle>纸上得来终觉浅，绝知此事要躬行。</subtitle>
-    <logo>https://serverless-page-bucket-7mo7g1yj-1258176790.cos-website.ap-hongkong.myqcloud.com/images/avatar.png</logo>
-    <icon>https://serverless-page-bucket-7mo7g1yj-1258176790.cos-website.ap-hongkong.myqcloud.com/favicon.ico</icon>
+    <logo>https://blog.risin.work/images/avatar.png</logo>
+    <icon>https://blog.risin.work/favicon.ico</icon>
     <rights>All rights reserved 2021, 朝阳的个人博客</rights>
     <entry>
         <title type="html"><![CDATA[BlackJack]]></title>
-        <id>https://serverless-page-bucket-7mo7g1yj-1258176790.cos-website.ap-hongkong.myqcloud.com/s2yGCA70x/</id>
-        <link href="https://serverless-page-bucket-7mo7g1yj-1258176790.cos-website.ap-hongkong.myqcloud.com/s2yGCA70x/">
+        <id>https://blog.risin.work/s2yGCA70x/</id>
+        <link href="https://blog.risin.work/s2yGCA70x/">
         </link>
         <updated>2021-05-24T05:50:15.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
@@ -26,8 +26,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[🍎你好]]></title>
-        <id>https://serverless-page-bucket-7mo7g1yj-1258176790.cos-website.ap-hongkong.myqcloud.com/ey0b7iGJx/</id>
-        <link href="https://serverless-page-bucket-7mo7g1yj-1258176790.cos-website.ap-hongkong.myqcloud.com/ey0b7iGJx/">
+        <id>https://blog.risin.work/ey0b7iGJx/</id>
+        <link href="https://blog.risin.work/ey0b7iGJx/">
         </link>
         <updated>2021-05-23T09:23:52.000Z</updated>
         <content type="html"><![CDATA[<p>：D</p>
