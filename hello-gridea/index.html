@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
     <meta charset="utf-8" >
 
 <title>Hello Gridea | 朝阳的个人博客</title>
@@ -9,15 +8,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://risin.work/favicon.ico?v=1621927891744">
+<link rel="shortcut icon" href="https://risin.work/favicon.ico?v=1621928284199">
 <link rel="stylesheet" href="https://risin.work/styles/main.css">
 
 
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-197651554-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-197651554-1');
+</script>
 
 
     <meta name="description" content="👏  欢迎使用 Gridea ！
@@ -37,7 +44,7 @@ Gridea 主页
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://risin.work">
-        <img src="https://risin.work/images/avatar.png?v=1621927891744" class="site-logo">
+        <img src="https://risin.work/images/avatar.png?v=1621928284199" class="site-logo">
         <h1 class="site-title">朝阳的个人博客</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -82,10 +89,6 @@ Gridea 主页
     <div class="social-container">
       
         
-          <a class="social-link" href="https://github.com/rs0010/" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        
       
         
       
@@ -110,13 +113,7 @@ Gridea 主页
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
             <h2 class="post-title">Hello Gridea</h2>
-            <div class="post-date">
-            <span>2018-12-12</span>
-	    <span id=Hello Gridea class="leancloud_visitors">
-	        <em class="post-meta-item-text">阅读量 </em>
-	        <i class="leancloud-visitors-count"></i>
-	    </span>
-            </div>
+            <div class="post-date">2018-12-12</div>
             
               <div class="feature-container" style="background-image: url('https://risin.work/post-images/hello-gridea.png')">
               </div>
@@ -157,8 +154,9 @@ Gridea 主页
             
 
             
-    		<div id="waline" class="fade-in"></div>
+
           </div>
+
         </div>
       </div>
     </div>
@@ -178,18 +176,14 @@ var app = new Vue({
 </script>
 
 
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
 
 
 
 
-    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
-    <script>
-        new Waline({
-            el: '#waline',
-            serverURL: 'https://imnerd-api-pi-mauve.vercel.app',
-            visitor: true
-        });
-    </script>
-    
+
   </body>
 </html>

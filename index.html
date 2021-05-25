@@ -8,15 +8,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://risin.work/favicon.ico?v=1621927891744">
+<link rel="shortcut icon" href="https://risin.work/favicon.ico?v=1621928284199">
 <link rel="stylesheet" href="https://risin.work/styles/main.css">
 
 
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-197651554-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-197651554-1');
+</script>
 
 
     <meta name="description" content="纸上得来终觉浅，绝知此事要躬行。">
@@ -29,7 +37,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://risin.work">
-        <img src="https://risin.work/images/avatar.png?v=1621927891744" class="site-logo">
+        <img src="https://risin.work/images/avatar.png?v=1621928284199" class="site-logo">
         <h1 class="site-title">朝阳的个人博客</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -73,10 +81,6 @@
   <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
     <div class="social-container">
       
-        
-          <a class="social-link" href="https://github.com/rs0010/" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
         
       
         
@@ -160,6 +164,11 @@ var app = new Vue({
 
 </script>
 
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
 
 
 
