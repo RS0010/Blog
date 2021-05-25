@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <meta charset="utf-8" >
+
+<title>关于 | 朝阳的个人博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://serverless-page-bucket-7mo7g1yj-1258176790.cos-website.ap-hongkong.myqcloud.com//favicon.ico?v=1621949521047">
+<link rel="stylesheet" href="https://serverless-page-bucket-7mo7g1yj-1258176790.cos-website.ap-hongkong.myqcloud.com//styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+欢迎来到我的小站呀，很高兴遇见你！🤝
+
+🏠 关于本站
+本站初创于2021年5月23日
+👨‍💻 博主是谁
+⛹ 兴趣爱好
+📬 联系我呀
+..." />
+    <meta name="keywords" content="" />
+    <script>
+       function ca(){
+         var a = document.getElementById("leancloud_visitors");
+         a.id =windows.location.pathname;
+       }
+    </script>
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://serverless-page-bucket-7mo7g1yj-1258176790.cos-website.ap-hongkong.myqcloud.com/">
+        <img src="https://serverless-page-bucket-7mo7g1yj-1258176790.cos-website.ap-hongkong.myqcloud.com//images/avatar.png?v=1621949521047" class="site-logo">
+        <h1 class="site-title">朝阳的个人博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/programing" class="site-nav">
+            编程
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/rs0010/" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      纸上得来终觉浅，绝知此事要躬行。
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://serverless-page-bucket-7mo7g1yj-1258176790.cos-website.ap-hongkong.myqcloud.com//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">关于</h2>
+            <div id="post-data" class="post-date">
+            <span>2020-05-23</span>
+	    <span id="leancloud_visitors" class="leancloud_visitors">
+	        <em class="post-meta-item-text">阅读量 </em>
+	        <i class="leancloud-visitors-count"></i>
+	    </span>
+            </div>
+            
+            <div class="post-content" v-pre>
+              <blockquote>
+<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+</blockquote>
+<h2 id="关于本站">🏠 关于本站</h2>
+<p>本站初创于2021年5月23日</p>
+<h2 id="博主是谁">👨‍💻 博主是谁</h2>
+<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
+<h2 id="联系我呀">📬 联系我呀</h2>
+
+	    </div>
+            
+            
+
+            
+    		<div id="waline" class="fade-in"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+    <script>
+        new Waline({
+            el: '#waline',
+            serverURL: 'https://imnerd-api-pi-mauve.vercel.app',
+            visitor: true,
+            path: window.location.pathname
+        });
+    </script>
+    
+  </body>
+</html>
