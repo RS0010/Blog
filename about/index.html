@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://serverless-page-bucket-aabzuijm-1258176790.cos-website.ap-hongkong.myqcloud.com/favicon.ico?v=1621957601323">
+<link rel="shortcut icon" href="https://serverless-page-bucket-aabzuijm-1258176790.cos-website.ap-hongkong.myqcloud.com/favicon.ico?v=1621970183396">
 <link rel="stylesheet" href="https://serverless-page-bucket-aabzuijm-1258176790.cos-website.ap-hongkong.myqcloud.com/styles/main.css">
 
 
@@ -35,15 +35,19 @@
          var a = document.getElementById("leancloud_visitors");
          a.id =window.location.pathname;
        }
+       function cb(){
+         var b = document.getElementById("waline-comment-count");
+         b.id =window.location.pathname;
+       }
     </script>
   </head>
   <body>
     <div id="app" class="main">
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+      <div class="sidebar" :class="{ 'full-height': menuVisible }" style="overflow:hidden">
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://serverless-page-bucket-aabzuijm-1258176790.cos-website.ap-hongkong.myqcloud.com">
-        <img src="https://serverless-page-bucket-aabzuijm-1258176790.cos-website.ap-hongkong.myqcloud.com/images/avatar.png?v=1621957601323" class="site-logo">
+        <img src="https://serverless-page-bucket-aabzuijm-1258176790.cos-website.ap-hongkong.myqcloud.com/images/avatar.png?v=1621970183396" class="site-logo">
         <h1 class="site-title">朝阳的个人博客</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -107,6 +111,10 @@
     </div>
     <div class="site-footer">
       Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://serverless-page-bucket-aabzuijm-1258176790.cos-website.ap-hongkong.myqcloud.com/atom.xml" target="_blank">RSS</a>
+      <span id="/" class="leancloud_visitors" style="float:right">
+        <em class="post-meta-item-text">访客 </em>
+        <i class="leancloud-visitors-count"></i>
+      </span>
     </div>
   </div>
 </div>
@@ -116,11 +124,17 @@
           <div class="post-detail">
             <h2 class="post-title">关于</h2>
             <div id="post-data" class="post-date">
-            <span>2020-05-23</span>
-	    <span id="leancloud_visitors" class="leancloud_visitors">
-	        <em class="post-meta-item-text">阅读量 </em>
-	        <i class="leancloud-visitors-count"></i>
-	    </span>
+              <span>2020-05-23</span>
+              <span style="float:right">
+	        <span id="leancloud_visitors" class="leancloud_visitors">
+	          <em class="post-meta-item-text">阅读量 </em>
+	          <i class="leancloud-visitors-count"></i>
+	        </span>
+	        <span>
+	          <em class="post-meta-item-text">   评论数 </em>
+	          <i id="waline-comment-count" class="waline-comment-count"></i>
+	        </span>
+	      </span>
             </div>
             
             <div class="post-content" v-pre>
@@ -164,7 +178,7 @@ var app = new Vue({
 
 
     <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
-    <script>ca();</script>
+    <script>ca();cb();</script>
     <script>
         new Waline({
             el: '#waline',
