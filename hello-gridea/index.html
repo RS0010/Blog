@@ -9,8 +9,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://blog.risin.work/favicon.ico?v=1622030081406">
-<link rel="stylesheet" href="https://blog.risin.work/styles/main.css">
+<link rel="shortcut icon" href="https://risin.work/favicon.ico?v=1622030518378">
+<link rel="stylesheet" href="https://risin.work/styles/main.css">
 
 
 
@@ -18,6 +18,15 @@
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-197651554-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-197651554-1');
+</script>
 
 
     <meta name="description" content="👏  欢迎使用 Gridea ！
@@ -45,8 +54,8 @@ Gridea 主页
       <div class="sidebar" :class="{ 'full-height': menuVisible }" style="overflow:hidden">
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
-      <a class="site-title-container" href="https://blog.risin.work">
-        <img src="https://blog.risin.work/images/avatar.png?v=1622030081406" class="site-logo">
+      <a class="site-title-container" href="https://risin.work">
+        <img src="https://risin.work/images/avatar.png?v=1622030518378" class="site-logo">
         <h1 class="site-title">朝阳的个人博客</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -109,7 +118,7 @@ Gridea 主页
       纸上得来终觉浅，绝知此事要躬行。
     </div>
     <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://blog.risin.work/atom.xml" target="_blank">RSS</a>
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://risin.work/atom.xml" target="_blank">RSS</a>
       <span id="/" class="leancloud_visitors" style="float:right">
         <em class="post-meta-item-text">访客 </em>
         <i class="leancloud-visitors-count"></i>
@@ -136,7 +145,7 @@ Gridea 主页
 	      </span>
             </div>
             
-              <div class="feature-container" style="background-image: url('https://blog.risin.work/post-images/hello-gridea.png')">
+              <div class="feature-container" style="background-image: url('https://risin.work/post-images/hello-gridea.png')">
               </div>
 	      
             <div class="post-content" v-pre>
@@ -166,7 +175,7 @@ Gridea 主页
             
               <div class="tag-container">
                 
-                  <a href="https://blog.risin.work/s1X-w7RGJ/" class="tag">
+                  <a href="https://risin.work/s1X-w7RGJ/" class="tag">
                     Gridea
                   </a>
                 
@@ -195,6 +204,11 @@ var app = new Vue({
 
 </script>
 
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
 
 
 
